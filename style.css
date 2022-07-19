@@ -555,8 +555,16 @@ font-size: 14px;
     min-height: 330px;
     max-height: 330px;
 }
+.same-bg {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+}
+.margii {
+  margin: 0 -5px;
+}
   .hero-left {
-    margin-top: 200px;
+    margin-top: 150px;
   }
   ul.social-ul {
     margin-left: -35px;
