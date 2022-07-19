@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/1864/1864593.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -129,7 +129,7 @@
               <div class="hero-left-content">
                 <p>Hello</p>
                 <h2>I am Abhinav Mishra.</h2>
-                <h3>Web designer & Front end developer</h3>
+                <h3 i am <span class="typed"></span></h3>
               </div>
               <div class="hero-social">
                 <ul class="social-ul">
@@ -574,6 +574,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+
     <script>
       
       $(document).ready(function () {
@@ -626,6 +627,35 @@
           },
         });
       });
+    </script>
+    <script>
+      new Typed('.typed',{
+  strings : ['UI/UX designer','Web developer','Front end Developer'],
+  delaySpeed : 90,
+  stringsElement: null,
+		// typing speed
+		typeSpeed: 50,
+		// time before typing starts
+		startDelay: 1200,
+		// backspacing speed
+		backSpeed: 20,
+		// time before backspacing
+		backDelay: 500,
+		// loop
+		loop: true,
+		// false = infinite
+		loopCount: false,
+		// show cursor
+		showCursor: false,
+		// character for cursor
+		cursorChar: "|",
+		// attribute to type (null == text)
+		attr: null,
+		// either html or text
+		contentType: 'html',
+});
+      // typed js
+
     </script>
   </body>
 </html>
