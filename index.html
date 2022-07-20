@@ -749,5 +749,38 @@
 
     </script>
   <script src="script.js" async defer></script>
+  <script>
+    var sections = $('section')
+  , nav = $('nav')
+  , nav_height = nav.outerHeight();
+
+$(window).on('scroll', function () {
+  var cur_pos = $(this).scrollTop();
+  
+  sections.each(function() {
+    var top = $(this).offset().top - nav_height,
+        bottom = top + $(this).outerHeight();
+    
+    if (cur_pos >= top && cur_pos <= bottom) {
+      nav.find('a').removeClass('activelink');
+      sections.removeClass('activelink');
+      
+      $(this).addClass('activelink');
+      nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('activelink');
+    }
+  });
+});
+
+nav.find('a').on('click', function () {
+  var $el = $(this)
+    , id = $el.attr('href');
+  
+  $('html, body').animate({
+    scrollTop: $(id).offset().top - nav_height
+  }, 500);
+  
+  return false;
+});
+  </script>
   </body>
 </html>

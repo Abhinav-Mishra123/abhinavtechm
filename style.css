@@ -16,6 +16,13 @@ html {
   /* overflow-x: hidden !important; */
 }
 
+a.activelink {
+  border-bottom: 2px solid var(--red);
+  color: var(--red) !important;
+}
+section.activelink {
+
+}
 /* Navbar css */
 .bg-changed {
   background-color: white !important;
