@@ -1,5 +1,55 @@
 console.log("Abhinav Mishra portfolio");
 
+// Scrolling animation 
+
+function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 100;
+
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("activeme");
+        } else {
+            reveals[i].classList.remove("activeme");
+        }
+    }
+}
+window.addEventListener("scroll", reveal);
+
+// end
+
+new Typed('.typed',{
+    strings : ['UI/UX designer','Web developer','Front end Developer'],
+    delaySpeed : 90,
+    stringsElement: null,
+          // typing speed
+          typeSpeed: 50,
+          // time before typing starts
+          startDelay: 1200,
+          // backspacing speed
+          backSpeed: 20,
+          // time before backspacing
+          backDelay: 500,
+          // loop
+          loop: true,
+          // false = infinite
+          loopCount: false,
+          // show cursor
+          showCursor: false,
+          // character for cursor
+          cursorChar: "|",
+          // attribute to type (null == text)
+          attr: null,
+          // either html or text
+          contentType: 'html',
+  });
+        // typed js
+
+
+
 const filterItem = document.querySelector(".items");
 const filterImg = document.querySelectorAll(".gallery .image");
 
@@ -30,25 +80,6 @@ window.onload =()=>{
    }
 }
 
-
-// Scrolling animation 
-
-function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-
-    for (var i = 0; i < reveals.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 100;
-
-        if (elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add("activeme");
-        } else {
-            reveals[i].classList.remove("activeme");
-        }
-    }
-}
-window.addEventListener("scroll", reveal);
 
 
 
